@@ -1,0 +1,91 @@
+<mxfile host="app.diagrams.net">
+  <diagram name="Страница-1" id="uXv2yGQ4-Y2TQBAB1VQo">
+    <mxGraphModel dx="1414" dy="754" grid="1" gridSize="10" guides="1" tooltips="1" connect="1" arrows="1" fold="1" page="1" pageScale="1" pageWidth="827" pageHeight="1169" background="light-dark(#ffffff, #121212)" math="0" shadow="0">
+      <root>
+        <mxCell id="0" />
+        <mxCell id="1" parent="0" />
+        <mxCell id="3" parent="1" style="shape=parallelogram;perimeter=parallelogramPerimeter;whiteSpace=wrap;html=1;fixedSize=1;" value="n" vertex="1">
+          <mxGeometry height="40" width="160" x="330" y="90" as="geometry" />
+        </mxCell>
+        <mxCell id="4" parent="1" style="shape=hexagon;perimeter=hexagonPerimeter2;whiteSpace=wrap;html=1;fixedSize=1;" value="i = 0; i &amp;lt; n; i++" vertex="1">
+          <mxGeometry height="50" width="180" x="320" y="160" as="geometry" />
+        </mxCell>
+        <mxCell id="5" parent="1" style="shape=parallelogram;perimeter=parallelogramPerimeter;whiteSpace=wrap;html=1;fixedSize=1;" value="m.title, m.date,&lt;br&gt;m.hour, m.minute,&lt;br&gt;m.duration, m.genre, m.budget" vertex="1">
+          <mxGeometry height="60" width="240" x="290" y="240" as="geometry" />
+        </mxCell>
+        <mxCell id="6" parent="1" style="rhombus;whiteSpace=wrap;html=1;" value="&lt;pre style=&quot;font-family: &amp;quot;Cascadia Mono&amp;quot;; font-size: 9pt;&quot;&gt;(m.hour &amp;gt; 18 || &lt;br&gt;(m.hour == 18 &amp;amp;&amp;amp; m.minute &amp;gt; 0))&lt;br&gt; &amp;amp;&amp;amp; m.duration &amp;gt; 100&lt;/pre&gt;" vertex="1">
+          <mxGeometry height="90" width="300" x="260" y="330" as="geometry" />
+        </mxCell>
+        <mxCell id="7" parent="1" style="shape=parallelogram;perimeter=parallelogramPerimeter;whiteSpace=wrap;html=1;fixedSize=1;" value="title, date, hour:minute,&lt;br&gt;duration, genre, budget" vertex="1">
+          <mxGeometry height="60" width="210" x="130" y="450" as="geometry" />
+        </mxCell>
+        <mxCell id="8" parent="1" style="shape=parallelogram;perimeter=parallelogramPerimeter;whiteSpace=wrap;html=1;fixedSize=1;" value="&quot;фильм начинается до 18:00&lt;br&gt;или длится меньше 1 ч 40 мин.&quot;" vertex="1">
+          <mxGeometry height="60" width="220" x="480" y="450" as="geometry" />
+        </mxCell>
+        <mxCell id="10" edge="1" parent="1" style="edgeStyle=orthogonalEdgeStyle;rounded=0;orthogonalLoop=1;jettySize=auto;html=1;" target="3">
+          <mxGeometry relative="1" as="geometry">
+            <mxPoint x="410" y="60" as="sourcePoint" />
+          </mxGeometry>
+        </mxCell>
+        <mxCell id="11" edge="1" parent="1" source="3" style="edgeStyle=orthogonalEdgeStyle;rounded=0;orthogonalLoop=1;jettySize=auto;html=1;" target="4">
+          <mxGeometry relative="1" as="geometry" />
+        </mxCell>
+        <mxCell id="12" edge="1" parent="1" source="4" style="edgeStyle=orthogonalEdgeStyle;rounded=0;orthogonalLoop=1;jettySize=auto;html=1;" target="5">
+          <mxGeometry relative="1" as="geometry" />
+        </mxCell>
+        <mxCell id="DhTS-hjigtBw9s-SPpzI-19" connectable="0" parent="12" style="edgeLabel;html=1;align=center;verticalAlign=middle;resizable=0;points=[];inheritText=1;" value="Да" vertex="1">
+          <mxGeometry relative="1" x="0.2" as="geometry">
+            <mxPoint as="offset" />
+          </mxGeometry>
+        </mxCell>
+        <mxCell id="13" edge="1" parent="1" source="5" style="edgeStyle=orthogonalEdgeStyle;rounded=0;orthogonalLoop=1;jettySize=auto;html=1;" target="6">
+          <mxGeometry relative="1" as="geometry" />
+        </mxCell>
+        <mxCell id="14" edge="1" parent="1" source="6" style="edgeStyle=orthogonalEdgeStyle;rounded=0;orthogonalLoop=1;jettySize=auto;html=1;exitX=0;exitY=0.5;exitDx=0;exitDy=0;entryX=0.5;entryY=0;entryDx=0;entryDy=0;" target="7" value="Да">
+          <mxGeometry relative="1" as="geometry" />
+        </mxCell>
+        <mxCell id="15" edge="1" parent="1" source="6" style="edgeStyle=orthogonalEdgeStyle;rounded=0;orthogonalLoop=1;jettySize=auto;html=1;exitX=1;exitY=0.5;exitDx=0;exitDy=0;entryX=0.5;entryY=0;entryDx=0;entryDy=0;" target="8" value="Нет">
+          <mxGeometry relative="1" as="geometry" />
+        </mxCell>
+        <mxCell id="16" edge="1" parent="1" source="7" style="edgeStyle=orthogonalEdgeStyle;rounded=0;orthogonalLoop=1;jettySize=auto;html=1;exitX=0.5;exitY=1;exitDx=0;exitDy=0;entryX=0;entryY=0.5;entryDx=0;entryDy=0;" target="4">
+          <mxGeometry relative="1" x="-0.4375" as="geometry">
+            <Array as="points">
+              <mxPoint x="235" y="560" />
+              <mxPoint x="90" y="560" />
+              <mxPoint x="90" y="185" />
+            </Array>
+          </mxGeometry>
+        </mxCell>
+        <mxCell id="17" edge="1" parent="1" source="8" style="edgeStyle=orthogonalEdgeStyle;rounded=0;orthogonalLoop=1;jettySize=auto;html=1;exitX=0.5;exitY=1;exitDx=0;exitDy=0;endArrow=none;endFill=0;">
+          <mxGeometry relative="1" x="-0.4878" as="geometry">
+            <Array as="points">
+              <mxPoint x="590" y="560" />
+            </Array>
+            <mxPoint x="230" y="560" as="targetPoint" />
+          </mxGeometry>
+        </mxCell>
+        <mxCell id="18" edge="1" parent="1" source="4" style="edgeStyle=orthogonalEdgeStyle;rounded=0;orthogonalLoop=1;jettySize=auto;html=1;exitX=1;exitY=0.5;exitDx=0;exitDy=0;entryX=0.5;entryY=0;entryDx=0;entryDy=0;">
+          <mxGeometry relative="1" as="geometry">
+            <Array as="points">
+              <mxPoint x="740" y="185" />
+              <mxPoint x="740" y="585" />
+              <mxPoint x="410" y="585" />
+            </Array>
+            <mxPoint x="410" y="610" as="targetPoint" />
+          </mxGeometry>
+        </mxCell>
+        <mxCell id="DhTS-hjigtBw9s-SPpzI-18" connectable="0" parent="18" style="edgeLabel;html=1;align=center;verticalAlign=middle;resizable=0;points=[];inheritText=1;" value="Нет" vertex="1">
+          <mxGeometry relative="1" x="-0.9236" y="-1" as="geometry">
+            <mxPoint x="22" y="-1" as="offset" />
+          </mxGeometry>
+        </mxCell>
+        <mxCell id="DhTS-hjigtBw9s-SPpzI-20" parent="1" style="rounded=1;whiteSpace=wrap;html=1;roundedPerimeter=1;" value="Начало" vertex="1">
+          <mxGeometry height="50" width="120" x="350" y="10" as="geometry" />
+        </mxCell>
+        <mxCell id="DhTS-hjigtBw9s-SPpzI-22" parent="1" style="rounded=1;whiteSpace=wrap;html=1;roundedPerimeter=1;" value="Конец" vertex="1">
+          <mxGeometry height="50" width="120" x="350" y="610" as="geometry" />
+        </mxCell>
+      </root>
+    </mxGraphModel>
+  </diagram>
+</mxfile>
